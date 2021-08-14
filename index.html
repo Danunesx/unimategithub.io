@@ -4,21 +4,19 @@
         <meta charset="UTF-8">
         <meta name="author" content="Daniel Pereira Nunes">
         <meta http-equiv="content-language" content="pt-br">
-        <meta name="description" content="...">
-        <meta name="keywords" content="...">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Unimate </title>
-        <link href="style.css" rel="stylesheet"/>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="./styles/reset.css">
+        <link rel="stylesheet" href="./styles/style.css"/>
+        <link rel="stylesheet" href="./styles/header.css"/>
+        <link rel="stylesheet" href="./styles/timeline.css">
     </head>
     <body>
         <header>
             <nav>
-                <a class="logo syne" href="/">unimate</a>
-                <div class="mobile-menu">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
+                <a class="logo" href="#">unimate</a>
                 <ul class="nav-list">
                     <li><a href="#"> Inicio </a></li>
                     <li><a href="#"> Sobre </a></li>
@@ -27,74 +25,17 @@
                 </ul>
             </nav>
         </header>
-        <div class="cont" data-0="transform:translateX(0%);" data-1000="transform:translateX(-600%)">
-            <section>
-                <div class="bg">
+        <div class="container">
+            <div class="bg-video">
                 <div class="content">
                     <h2 class="bgtitle syne">Robótica</h2>
-                    <p class="subtext mont">A evolução da tecnologia na sociedade contemporânea acontece com uma rapidez assustadora. Uma das principais áreas em que esse avanço ocorre é na robótica. Mas afinal, o que é a Robótica? Como e quando surgiu? Até onde é capaz de avançar? Neste post, contaremos tudo e um pouco mais sobre essa área fascinante da ciência.
-                    </p>
+                    <p class="subtext mont">A evolução da tecnologia na sociedade contemporânea acontece com uma rapidez assustadora. Uma das principais áreas em que esse avanço ocorre é na robótica. Mas afinal, o que é a Robótica? Como e quando surgiu? Até onde é capaz de avançar? Neste post, contaremos tudo e um pouco mais sobre essa área fascinante da ciência.</p>
                 </div>
-                    <video autoplay muted loop>
-                        <source src="clip.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </section>
-            <section>
-                <div class="content">
-                    <h2>Ponto de ignição</h2>
-                    <p>Texto fdasfjkhsafs fasdfjsahf ohf hoaishfois ahfjsai hioahfaisfh ashfias
-                        fasijfaosifujasiofji aif hjioafhjioasfh jijai ji jfpifjuasi jfais jfhi
-                        fsakfjs oaj oj opfjaspofjpsaj of j ojf opajf opaj fjof pajfopjfa ojf fjap
-                        o jfapsjp jaopsjf pjpo jfopaj pfojasop jpojk opj opj op jo joaspjopj fsapjf
-                    </p>
-                </div>
-            </section>
-            <section>
-                <div class="content">
-                    <h2>História</h2>
-                    <p>Texto fdasfjkhsafs fasdfjsahf ohf hoaishfois ahfjsai hioahfaisfh ashfias
-                        fasijfaosifujasiofji aif hjioafhjioasfh jijai ji jfpifjuasi jfais jfhi
-                        fsakfjs oaj oj opfjaspofjpsaj of j ojf opajf opaj fjof pajfopjfa ojf fjap
-                        o jfapsjp jaopsjf pjpo jfopaj pfojasop jpojk opj opj op jo joaspjopj fsapjf
-                    </p>
-                </div>
-            </section>
-            <section>
-                <div class="content">
-                    <h2>História</h2>
-                    <p>Texto fdasfjkhsafs fasdfjsahf ohf hoaishfois ahfjsai hioahfaisfh ashfias
-                        fasijfaosifujasiofji aif hjioafhjioasfh jijai ji jfpifjuasi jfais jfhi
-                        fsakfjs oaj oj opfjaspofjpsaj of j ojf opajf opaj fjof pajfopjfa ojf fjap
-                        o jfapsjp jaopsjf pjpo jfopaj pfojasop jpojk opj opj op jo joaspjopj fsapjf
-                    </p>
-                </div>
-            </section>
-            <section>
-                <div class="content">
-                    <h2>Destruição</h2>
-                    <p>Texto fdasfjkhsafs fasdfjsahf ohf hoaishfois ahfjsai hioahfaisfh ashfias
-                        fasijfaosifujasiofji aif hjioafhjioasfh jijai ji jfpifjuasi jfais jfhi
-                        fsakfjs oaj oj opfjaspofjpsaj of j ojf opajf opaj fjof pajfopjfa ojf fjap
-                        o jfapsjp jaopsjf pjpo jfopaj pfojasop jpojk opj opj op jo joaspjopj fsapjf
-                    </p>
-                </div>
-            </section>
-            <section>
-                <div class="content">
-                    <h2>Destruição</h2>
-                    <p>Texto fdasfjkhsafs fasdfjsahf ohf hoaishfois ahfjsai hioahfaisfh ashfias
-                        fasijfaosifujasiofji aif hjioafhjioasfh jijai ji jfpifjuasi jfais jfhi
-                        fsakfjs oaj oj opfjaspofjpsaj of j ojf opajf opaj fjof pajfopjfa ojf fjap
-                        o jfapsjp jaopsjf pjpo jfopaj pfojasop jpojk opj opj op jo joaspjopj fsapjf
-                    </p>
-                </div>
-            </section>
+                <video autoplay muted loop>
+                    <source src="clip.mp4" type="video/mp4">
+                </video>
+            </div>
         </div>
-        <script src="mobile-navbar.js"></script>
-        <script type="text/javascript" src="skrollr.js"></script>
-	    <script type="text/javascript">
-	        var s = skrollr.init();
-	    </script>
+        <script src="./scripts/mobile-navbar.js"></script>
     </body>
 </html>

@@ -1,0 +1,25 @@
+.timeline{
+    height: 10px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.timeline .dot{
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    border-radius: 50%;
+
+    position: relative;
+    top: 0;
+    left: 10%;
+}
+
+.timeline .line{
+    height: 100%;
+    width: 100vw;
+    background-color: blue
+}
