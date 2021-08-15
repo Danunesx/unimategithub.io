@@ -1,5 +1,5 @@
 .ignition-point{
-    height: 100vh;
+    height: auto;
     width: 100%;
 
     display: flex;
@@ -21,9 +21,7 @@
 .ignition-point .initial{
     display: flex;
     align-items: start;
-    justify-content: center;
-
-    padding-bottom: 100px;
+    justify-content: center;;
 }
 
 .initial .text{
@@ -60,22 +58,30 @@
     width: 100%;
 
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    padding: 300px 0 100px 0;
+    padding-bottom: 200px;
     background-color: var(--color-white);
 }
 
 .timeline {
-    width: 80%;
-    height: auto;
+    width: 100%;
+    height: auto !important;
     max-width: 800px;
     margin: 0 auto;
     position: relative;
 }
 
-.timeline ul {
+.container-timeline h2{
+    /* padding: 0; */
+}
+.timeline h2{
+    
+}
+
+.timeline ul {  
     list-style: none;
 }
 
@@ -100,6 +106,11 @@
     margin-bottom: 10px;
 }
 
+.timeline-content_center{
+    text-align: center !important;
+    margin-bottom: 0 !important;
+}
+
 .timeline-content p {
     font-size: 16px;
     line-height: 30px;
@@ -107,10 +118,12 @@
 }
 
 .timeline-content .date {
-    font-size: 12px;
+    font-size: 18px;
     font-weight: 300;
     margin-bottom: 10px;
     letter-spacing: 2px;
+
+    color: var(--color-purple);
 }
 
 @media only screen and (min-width: 768px) {
