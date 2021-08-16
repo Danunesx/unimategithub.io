@@ -63,8 +63,10 @@
     align-items: center;
     justify-content: center;
 
-    padding-bottom: 200px;
+    padding-bottom: 50px;
     background-color: var(--color-black);
+
+    padding: -50px;
 }
 
 .timeline {
@@ -121,10 +123,10 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .timeline:before {
+    .timeline::before {
         content: "";
         width: 2px;
-        height: 100%;
+        height: 160%;
         position: absolute;
         top: 0;
         left: 50%;
@@ -180,5 +182,42 @@
 
     .timeline ul li:hover::before {
         background-color: var(--color-white);
+    }
+}
+
+/* init timeline 2 */
+.timeline-inverted{
+    padding-top: 80px;
+    background-color: var(--color-white);
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .timeline-inverted .timeline ul li:nth-child(odd) {
+        float: right;
+        clear: left;
+        transform: translateX(70px);
+        border-radius: 0px 20px 20px 20px;
+    }
+
+    .timeline-inverted .timeline ul li:nth-child(even) {
+        float: left;
+        clear: right;
+        transform: translateX(-70px);
+        border-radius: 20px 0px 20px 20px;
+    }
+
+    .timeline-inverted .timeline ul li:nth-child(odd)::before {
+        transform: translate(-50%, -50%) !important;
+        left: -30px !important;
+    }
+
+    .timeline-inverted .timeline ul li:nth-child(even)::before {
+        transform: translate(50%, -70%) !important;
+        left: 450px !important;
+    }
+
+    .timeline-inverted .timeline ul li:hover::before {
+        background-color: var(--color-black);
     }
 }
