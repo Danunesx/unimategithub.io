@@ -10,32 +10,25 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="stylesheet" href="./styles/reset.css">
         <link rel="stylesheet" href="./styles/style.css"/>
-        <link rel="stylesheet" href="./styles/header.css"/>
         <link rel="stylesheet" href="./styles/timeline.css">
     </head>
     <body>
         <header>
-            <nav>
-                <a class="logo" href="#">unimate</a>
-                <ul class="nav-list">
-                    <li><a href="#"> Inicio </a></li>
-                    <li><a href="#"> Sobre </a></li>
-                    <li><a href="#"> História </a></li>
-                    <li><a href="#"> Referências </a></li>
-                </ul>
-            </nav>
+            <a href="#" class="logo">unimate</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">História</a></li>
+                <li><a href="#">Tema Livre</a></li>
+                <li><a href="#">Sobre nós</a></li>
+            </ul>
         </header>
-        <div class="container">
-            <div class="bg-video">
-                <div class="content">
-                    <h2 class="bgtitle syne">Robótica</h2>
-                    <p class="subtext mont">A evolução da tecnologia na sociedade contemporânea acontece com uma rapidez assustadora. Uma das principais áreas em que esse avanço ocorre é na robótica. Mas afinal, o que é a Robótica? Como e quando surgiu? Até onde é capaz de avançar? Neste post, contaremos tudo e um pouco mais sobre essa área fascinante da ciência.</p>
-                </div>
-                <video autoplay muted loop>
-                    <source src="compressed-robot.webm" type="video/webm">
-                </video>
-            </div>
-        </div>
+        <section id="maincontent">
+            <img src="img/bg1.png" id="bgfixed">
+            <img src="img/bg2.png" id="back">
+            <img src="img/bg3.png" id="behind">
+            <h2 class="synefont" id="textbg">Robótica</h2>
+            <img src="img/eng.png" id="front">
+        </section>
         <div class="ignition-point">
             <h2 class="title">Ponto de Ignição</h2>
             <div class="initial">
@@ -125,5 +118,19 @@
             </div>
         </div>
         <script src="./scripts/mobile-navbar.js"></script>
+        <script>
+            let back = document.getElementById('back');
+            let behind = document.getElementById('behind');
+            let textbg = document.getElementById('textbg');
+            let front = document.getElementById('front');
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                back.style.left = value * 0.25 + 'px'
+                behind.style.left = value * -0.25 + 'px'
+                textbg.style.marginLeft = value * 0.15 + 'px'
+                front.style.marginLeft = value * 0.25 + 'px'
+            })
+        </script>
     </body>
 </html>
