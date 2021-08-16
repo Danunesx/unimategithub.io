@@ -68,3 +68,58 @@ section img#front {
     font-size: 20px;
 }
 
+.ignition-point{
+    height: auto;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--color-white);
+}
+
+.title{
+    font-family: 'Syne', sans-serif;
+    color: var(--color-purple);
+    font-size: 55px;
+    font-weight: bold;
+
+    padding: 80px 0;
+}
+
+.ignition-point .initial{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+
+    padding-bottom: 50px;
+}
+
+.initial .text{
+    width: 40%;
+
+    padding: 20px 0 0 30px;
+}   
+
+.initial p{
+    text-align: justify;
+
+    padding-bottom: 20px;
+
+    color: var(--color-purple);
+}
+
+.initial button{
+    width: 173px;
+    height: 38px;
+
+    border: none;
+    border-radius: 0px 45px 45px 45px;
+
+    background-color: var(--color-purple);
+    color: var(--color-white);
+
+    font-size: 18px;
+    font-weight: bold;
+}
