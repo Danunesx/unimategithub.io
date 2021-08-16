@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     --color-purple: #6100FF;
     --color-white: #f5f5f5;
@@ -31,16 +35,20 @@ section img {
     height: 100vh;
     object-fit: cover;
 }
+
 section img#front {
     z-index: 10;
 }
+
 #textbg {
     position: absolute;
     color: #f5f5f5;
     white-space: nowrap;
     font-size: 7.5vw;
+    font-weight: bold;
     z-index: 9;
 }
+
 #maincontent {
     margin: 0;
     padding: 0;
