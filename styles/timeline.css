@@ -7,8 +7,8 @@
     align-items: center;
     justify-content: center;
 
-    padding-bottom: 50px;
-    background-color: var(--color-black);
+    padding-bottom: 120px;
+    background-color: var(--color-white);
 
     padding: -50px;
 }
@@ -45,7 +45,10 @@
     line-height: 30px;
     margin-bottom: 10px;
 }
-
+h1.timeline-content_center {
+    font-family: 'Syne', sans-serif;
+    font-size: 35px;
+}
 .timeline-content_center{
     text-align: center !important;
     margin-bottom: 0 !important;
@@ -58,15 +61,17 @@
 }
 
 .timeline-content .date {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 300;
     margin-bottom: 10px;
     letter-spacing: 2px;
 
     color: var(--color-purple);
 }
-
-@media only screen and (min-width: 768px) {
+.pad2 {
+    padding-top: 10%;
+}
+@media only screen and (min-width: 978px) {
     .timeline::before {
         content: "";
         width: 2px;
@@ -80,7 +85,7 @@
     }
 
     .timeline ul li {
-        width: 50%;
+        width: 45%;
         position: relative;
         margin-bottom: 50px;
     }
@@ -88,15 +93,15 @@
     .timeline ul li:nth-child(odd) {
         float: left;
         clear: right;
-        transform: translateX(-70px);
-        border-radius: 20px 0px 20px 20px;
+        transform: translateX(-30px);
+        border-radius: 45px 0px 45px 45px;
     }
 
     .timeline ul li:nth-child(even) {
         float: right;
         clear: left;
-        transform: translateX(70px);
-        border-radius: 0px 20px 20px 20px;
+        transform: translateX(30px);
+        border-radius: 0px 45px 45px 45px;
     }
 
     .timeline ul li::before {
@@ -123,7 +128,9 @@
         position: absolute;
         top: -30px;
     }
-
+    .dateleft {
+        transform: translateX(325px)
+    }
     .timeline ul li:hover::before {
         background-color: var(--color-white);
     }
@@ -132,23 +139,23 @@
 /* init timeline 2 */
 .timeline-inverted{
     padding-top: 80px;
-    background-color: var(--color-white);
+    background-color: var(--color-black);
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 978px) {
     
     .timeline-inverted .timeline ul li:nth-child(odd) {
         float: right;
         clear: left;
-        transform: translateX(70px);
-        border-radius: 0px 20px 20px 20px;
+        transform: translateX(30px);
+        border-radius: 0px 45px 45px 45px;
     }
 
     .timeline-inverted .timeline ul li:nth-child(even) {
         float: left;
         clear: right;
-        transform: translateX(-70px);
-        border-radius: 20px 0px 20px 20px;
+        transform: translateX(-30px);
+        border-radius: 45px 0px 45px 45px;
     }
 
     .timeline-inverted .timeline ul li:nth-child(odd)::before {
@@ -157,11 +164,11 @@
     }
 
     .timeline-inverted .timeline ul li:nth-child(even)::before {
-        transform: translate(50%, -70%) !important;
-        left: 450px !important;
+        transform: translate(-50%, -50%) !important;
+        left: 107.5% !important;
     }
 
     .timeline-inverted .timeline ul li:hover::before {
-        background-color: var(--color-black);
+        background-color: var(--color-white);
     }
 }
