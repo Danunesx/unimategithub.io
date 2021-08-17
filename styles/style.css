@@ -47,10 +47,12 @@ section img#front {
     font-size: 7.5vw;
     z-index: 9;
 }
+
 h2#textbg {
     font-weight: 510;
     text-shadow: 0px 1px 16px rgba(155, 78, 255, 0.473);
 }
+
 #maincontent {
     margin: 0;
     padding: 0;

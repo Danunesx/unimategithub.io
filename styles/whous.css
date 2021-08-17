@@ -1,0 +1,71 @@
+.whous{
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--color-black);
+}
+
+.persons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.person{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding-right: 30px;
+}
+
+.photo{
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+
+    background-color: var(--color-white);
+}
+
+.name{
+    width: 214px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 0px 45px 45px 45px;
+
+    background-color: var(--color-purple);
+    color: var(--color-white);
+
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+
+    position: relative;
+    top: -30px;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social img{
+    height: 28px;
+    width: 28px;
+}
+
+.social img:nth-child(2){
+    padding-left: 10px;
+}
