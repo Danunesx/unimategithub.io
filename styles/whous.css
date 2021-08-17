@@ -33,6 +33,13 @@
     background-color: var(--color-white);
 }
 
+.photo img{
+    height: 240px;
+    width: 240px;
+
+    border-radius: 50%;
+}
+
 .name{
     width: 214px;
     height: 55px;

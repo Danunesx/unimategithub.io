@@ -1,0 +1,40 @@
+#references{
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--color-black);
+}
+
+.bibliography{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.reference{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.reference p{
+    color: var(--color-purple);
+}
+
+.reference p::after{
+    content: "-";
+    padding-left: 10px;
+}
+
+.reference a{
+    color: var(--color-white);
+}
+
+.reference a::before{
+    content: "";
+    padding-left: 10px;
+}
