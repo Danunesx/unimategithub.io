@@ -84,6 +84,10 @@ h1.timeline-content_center {
         background-color: var(--color-purple);
     }
 
+    .container-timeline.pad2 .timeline::before {
+        height: 75%;
+    }
+
     .timeline ul li {
         width: 45%;
         position: relative;
