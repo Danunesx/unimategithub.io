@@ -8,6 +8,7 @@ html{
 body{
     --color-purple: #6100FF;
     --color-white: #f5f5f5;
+    --color-white-second: #dad8d8;
     --color-black: #1B1B1B;
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
@@ -89,7 +90,7 @@ h2#textbg {
     align-items: center;
     padding-top: 2%;
 
-    background-color: var(--color-white);
+    background-color: var(--color-white-second);
 }
 
 .title{
