@@ -109,6 +109,15 @@ h2#textbg {
 
     padding-bottom: 50px;
 }
+.video{
+    height: 315px;
+    width: 560px;
+}
+
+.video iframe{
+    height: 315px;
+    width: 560px;
+}
 
 .initial .text{
     width: 40%;
@@ -136,4 +145,37 @@ h2#textbg {
 
     font-size: 18px;
     font-weight: bold;
+}
+
+@media only screen and (max-width: 1005px){
+    .ignition-point .initial{
+        flex-direction: column;
+        align-items: center;
+    }
+    .initial .text{
+        width: 70%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding-left: 0;
+    } 
+}
+
+@media only screen and (max-width: 768px) {
+    .video{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .video iframe{
+        width: 80%;
+    }  
+}
+
+@media only screen and (max-width: 600px) {
+    .video iframe{
+        width: 70%;
+    }  
 }
