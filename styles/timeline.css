@@ -68,9 +68,11 @@ h1.timeline-content_center {
 
     color: var(--color-purple);
 }
+
 .pad2 {
     padding-top: 10%;
 }
+
 @media only screen and (min-width: 978px) {
     .timeline::before {
         content: "";
