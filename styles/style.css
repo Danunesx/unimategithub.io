@@ -175,7 +175,20 @@ h2#textbg {
 }
 
 @media only screen and (max-width: 600px) {
+    .video{
+        height: 90%;
+    }
     .video iframe{
         width: 70%;
     }  
+}
+
+@media only screen and (max-width: 400px) {
+    .video iframe{
+        height: 60%;
+        width: 60%;
+    } 
+    .initial .text{
+        width: 60%;
+    } 
 }
