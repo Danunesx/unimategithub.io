@@ -75,7 +75,7 @@
 }
 
 @media screen and (max-width: 600px){
-    .card{
+    .swiper-slide {
         height: 70%;
         width: 50%;
     }
@@ -83,7 +83,7 @@
 
 
 @media screen and (max-width: 430px){
-    .card{
+    .swiper-slide {
         height: 50%;
         width: 30%;
     }
