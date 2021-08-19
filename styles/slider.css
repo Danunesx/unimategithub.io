@@ -15,7 +15,7 @@
 }
 
 .swiper-slide {
-    width: 600px;
+    width: 70%;
 
     text-align: center;
     font-size: 18px;
@@ -36,12 +36,11 @@
 }
 
 .card{
-    height: 90%;
     width: 70%;
 }
 
 .card__top{
-    height: 40%;
+    height: 200px;
     width: 100%;
 
     display: flex;
@@ -52,7 +51,6 @@
 }
 
 .card__down{
-    height: 60%;
     width: 100%;
 
     display: flex;
@@ -75,16 +73,16 @@
 }
 
 @media screen and (max-width: 600px){
-    .swiper-slide {
+    /* .swiper-slide {
         height: 70%;
         width: 50%;
-    }
+    } */
 }
 
 
 @media screen and (max-width: 430px){
-    .swiper-slide {
+    /* .swiper-slide {
         height: 50%;
         width: 30%;
-    }
+    } */
 }
