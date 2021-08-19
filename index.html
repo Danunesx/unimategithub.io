@@ -290,22 +290,9 @@
 
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <script src="./swiper/swiper-bundle.min.js"></script>
+
+        <script src="./scripts/animation-home.js"></script>
         <script src="./scripts/menu.js"></script>
         <script src="./scripts/slider.js"></script>
-
-        <script>
-            let back = document.getElementById('back');
-            let behind = document.getElementById('behind');
-            let textbg = document.getElementById('textbg');
-            let front = document.getElementById('front');
-
-            window.addEventListener('scroll', function(){
-                let value = window.scrollY;
-                back.style.left = value * 0.25 + 'px'
-                behind.style.left = value * -0.25 + 'px'
-                textbg.style.marginLeft = value * 0.15 + 'px'
-                front.style.marginLeft = value * 0.25 + 'px'
-            })
-        </script>   
     </body>
 </html>
