@@ -7,28 +7,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Unimate </title>
 
+        <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
+
         <link rel="stylesheet" href="./styles/reset.css">
         <link rel="stylesheet" href="styles/header.css"">
         <link rel="stylesheet" href="./styles/style.css"/>
         <link rel="stylesheet" href="./styles/timeline.css">
         <link rel="stylesheet" href="./styles/whous.css">
         <link rel="stylesheet" href="./styles/references.css">
-        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="stylesheet" href="./styles/slider.css">
     </head>
     <body>
         <header>
             <nav>
                 <input type="checkbox" id="check">
                 <label for="check" class="checkbtn">
-                 <!--    <i class="fas fa-bars"></i> -->
-                    <img src="./img/icons/menu-icon.png" alt="">
+                    <img class="menu-icon" src="./img/icons/menu-icon.png" alt="menu">
                 </label>
                 <label class="logo">unimate</label>
                 <ul class="menu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#timeline-section">História</a></li>
-                    <li><a href="#">Tema Livre</a></li>
+                    <li><a href="#extra">Tema Livre</a></li>
                     <li><a href="#whous">Sobre nós</a></li>
                     <li><a href="#references">Referências</a></li>
                 </ul>
@@ -153,6 +154,69 @@
                 </div>
             </div>
         </div>
+        <div id="extra">
+            <!-- Slide -->
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card__top">Tópico 1</div>
+                            <div class="card__down">
+                                <h2>Indústrias</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lectus leo, bibendum at libero quis, faucibus sollicitudin odio. Vivamus nec suscipit risus, eu finibus ante. Nam eget feugiat justo. Curabitur laoreet purus vel felis tristique pretium. Vestibulum porttitor ante ut sapien cursus condimentum. Nam tempus sit amet leo placerat faucibus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card__top">Tópico 1</div>
+                            <div class="card__down">
+                                <h2>Medicina</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lectus leo, bibendum at libero quis, faucibus sollicitudin odio. Vivamus nec suscipit risus, eu finibus ante. Nam eget feugiat justo. Curabitur laoreet purus vel felis tristique pretium. Vestibulum porttitor ante ut sapien cursus condimentum. Nam tempus sit amet leo placerat faucibus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card__top">Tópico 1</div>
+                            <div class="card__down">
+                                <h2>Fisioterapia</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lectus leo, bibendum at libero quis, faucibus sollicitudin odio. Vivamus nec suscipit risus, eu finibus ante. Nam eget feugiat justo. Curabitur laoreet purus vel felis tristique pretium. Vestibulum porttitor ante ut sapien cursus condimentum. Nam tempus sit amet leo placerat faucibus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card__top">Tópico 1</div>
+                            <div class="card__down">
+                                <h2>Tecnologia espacial</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lectus leo, bibendum at libero quis, faucibus sollicitudin odio. Vivamus nec suscipit risus, eu finibus ante. Nam eget feugiat justo. Curabitur laoreet purus vel felis tristique pretium. Vestibulum porttitor ante ut sapien cursus condimentum. Nam tempus sit amet leo placerat faucibus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card__top">Tópico 1</div>
+                            <div class="card__down">
+                                <h2>Indústria automobilística</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lectus leo, bibendum at libero quis, faucibus sollicitudin odio. Vivamus nec suscipit risus, eu finibus ante. Nam eget feugiat justo. Curabitur laoreet purus vel felis tristique pretium. Vestibulum porttitor ante ut sapien cursus condimentum. Nam tempus sit amet leo placerat faucibus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card__top">Tópico 1</div>
+                            <div class="card__down">
+                                <h2>Automação residencial</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lectus leo, bibendum at libero quis, faucibus sollicitudin odio. Vivamus nec suscipit risus, eu finibus ante. Nam eget feugiat justo. Curabitur laoreet purus vel felis tristique pretium. Vestibulum porttitor ante ut sapien cursus condimentum. Nam tempus sit amet leo placerat faucibus.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
         <div class="whous" id="whous">
             <h2 class="title">Integrantes</h2>
             <div class="persons">
@@ -223,7 +287,12 @@
                 </div>
             </div>
         </div>
-        <script src="./scripts/mobile-navbar.js"></script>
+
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="./swiper/swiper-bundle.min.js"></script>
+        <script src="./scripts/menu.js"></script>
+        <script src="./scripts/slider.js"></script>
+
         <script>
             let back = document.getElementById('back');
             let behind = document.getElementById('behind');
@@ -237,6 +306,6 @@
                 textbg.style.marginLeft = value * 0.15 + 'px'
                 front.style.marginLeft = value * 0.25 + 'px'
             })
-        </script>
+        </script>   
     </body>
 </html>
