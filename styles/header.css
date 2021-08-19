@@ -165,9 +165,6 @@ a.active, a:hover {
 	#check:checked ~ ul {
 		left: 0;
 	}
-	#check:checked ~ nav{
-		
-	}
 	#check:checked ~ .checkbtn img{
 		height: 70%;
 		width: 70%;
