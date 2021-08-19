@@ -36,8 +36,8 @@
 }
 
 .card{
-    height: 500px;
-    width: 400px;
+    height: 90%;
+    width: 70%;
 }
 
 .card__top{
@@ -72,4 +72,19 @@
 
 .card__down p{
     text-align: justify;
+}
+
+@media screen and (max-width: 600px){
+    .card{
+        height: 70%;
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 430px){
+    .card{
+        height: 50%;
+        width: 30%;
+    }
 }
