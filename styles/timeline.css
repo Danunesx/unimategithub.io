@@ -72,6 +72,9 @@ h1.timeline-content_center {
 .pad2 {
     padding-top: 10%;
 }
+.righttext {
+    text-align: right;
+}
 
 @media only screen and (min-width: 978px) {
     .timeline::before {
@@ -135,10 +138,10 @@ h1.timeline-content_center {
         top: -30px;
     }
     .dateleft {
-        transform: translateX(325px)
+        transform: translateX(310px);
     }
     .timeline ul li:hover::before {
-        background-color: var(--color-white);
+        background-color: var(--color-black);
     }
 }
 
