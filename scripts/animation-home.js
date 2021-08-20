@@ -5,7 +5,6 @@ let front = document.getElementById('front');
 
 window.addEventListener('scroll', () => {
     if (window.innerWidth > 900){
-        console.log('acessado');
         let value = window.scrollY;
         back.style.left = value * 0.25 + 'px'
         behind.style.left = value * -0.25 + 'px'
