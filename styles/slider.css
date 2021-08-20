@@ -19,7 +19,7 @@
 
     text-align: center;
     font-size: 18px;
-    background-color: var(--color-black);
+    background-color: var(--color-white-second);
 
     display: -webkit-box;
     display: -ms-flexbox;
@@ -50,6 +50,10 @@
     background-color: #919191;
 }
 
+.card__top img{
+    width: 100%;
+}
+
 .card__down{
     width: 100%;
 
@@ -60,12 +64,9 @@
 
     padding: 20px;
 
-    background: radial-gradient(89.13% 91.94% at 4.35% 64.17%, rgba(245, 245, 245, 0.42) 0%, rgba(245, 245, 245, 0.06) 100%);
+    background-color: var(--color-purple);
     box-shadow: 0px 4px 4px 0px #00000040;
-    border-radius: 0 0 25px 25px;
-    border: 0.4px solid #f5f5f5;
-    border-top: 0;
-    
+    border-radius: 0 0 25px 25px;  
 }
 
 .card__down h2{
