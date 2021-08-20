@@ -11,8 +11,9 @@
 .bibliography{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
+    padding: 0 50px;
 }
 
 .reference{
@@ -26,7 +27,7 @@
 }
 
 .reference p::after{
-    content: "-";
+    content: "";
     padding-left: 10px;
 }
 
