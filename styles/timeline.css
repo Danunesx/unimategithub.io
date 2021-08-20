@@ -58,6 +58,8 @@ h1.timeline-content_center {
     font-size: 16px;
     line-height: 30px;
     font-weight: 300;
+
+    text-align: justify;
 }
 
 .timeline-content .date {
@@ -71,9 +73,6 @@ h1.timeline-content_center {
 
 .pad2 {
     padding-top: 10%;
-}
-.righttext {
-    text-align: right;
 }
 
 @media only screen and (min-width: 978px) {
