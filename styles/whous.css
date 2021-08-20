@@ -75,6 +75,10 @@
     width: 28px;
 }
 
+.rotate{
+    transform: rotate(-90deg);
+}
+
 .social a:nth-child(2){
     padding-left: 10px;
 }
