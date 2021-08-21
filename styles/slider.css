@@ -53,10 +53,32 @@
     justify-content: center;
 
     background-color: #919191;
+
+    background-size: cover;
 }
 
-.card__top img{
-    width: 100%;
+.industrial{
+    background-image: url('../img/cards/industrial.jpg');
+}
+
+.medicina{
+    background-image: url('../img/cards/medicina.jpg');
+}
+
+.fisioterapia{
+    background-image: url('../img/cards/fisioterapia.jpg');
+}
+
+.espacial{
+    background-image: url('../img/cards/espacial.jpg');
+}
+
+.automobilistica{
+    background-image: url('../img/cards/automobilistica.jpg');
+}
+
+.residencia{
+    background-image: url('../img/cards/residencia.jpg');
 }
 
 .card__down{
