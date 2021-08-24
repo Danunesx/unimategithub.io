@@ -75,6 +75,10 @@ h1.timeline-content_center {
     padding-top: 10%;
 }
 
+#title-left {
+    text-align: right;
+}
+
 @media only screen and (min-width: 978px) {
     .timeline::before {
         content: "";

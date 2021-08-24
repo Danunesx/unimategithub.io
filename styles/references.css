@@ -1,17 +1,18 @@
 #references{
-    height: 100vh;
+    height: 90vh;
     
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 6%;
 
     background-color: var(--color-black);
 }
 
-.bibliography{
+.bibliography {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     justify-content: center;
     padding: 0 50px;
 }
@@ -22,8 +23,18 @@
     padding: 10px 0;
 }
 
+.reference a:hover{
+    background-color: #6100FF;
+    border-radius: 20px;
+    padding: 10px;
+    transition: all 0.5s 0s ease;
+}
+
 .reference p{
-    color: var(--color-purple);
+    color: var(--color-white);
+    width: 50%;
+    transform: translateX(50%);
+    text-align: center;
 }
 
 .reference p::after{
@@ -33,6 +44,7 @@
 
 .reference a{
     color: var(--color-white);
+    text-decoration: none;
 }
 
 .reference a::before{
